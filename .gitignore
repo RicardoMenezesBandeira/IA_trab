@@ -1,0 +1,13 @@
+# ambiente virtual
+.venv/
+venv/
+env/
+
+# cache do python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# dataset grande
+gaming_mental_health_10M_40features.csv

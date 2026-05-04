@@ -28,7 +28,12 @@ def main():
     plt_list = []
     data = import_data()
     data = limpar_data(data)
-    #print(calcular_estatisticas_completas(data))
+
+    #estatistica completa do dataset, para ter uma visão geral de tudo 
+    # (média, mediana, moda, desvio padrão, etc.)
+    print(calcular_estatisticas_completas(data))
+
+
     #divide a coluna de depressão em 20 faixas (bins) de 500 mil para facilitar a visualização e análise
     data['depression_score_binned'] = pd.cut(data['depression_score'], bins=20, labels=False)
 
